@@ -11,35 +11,56 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    margin: 36px 0px 10px;
+
+header .links{
+    margin: 30px 0 26px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-header .links a {
+header .links .menu a{
     text-decoration: none;
+    color: #111;
+    margin-right: 30px;
 }
 
-header .links #foodfy {
-    font-size: 26px;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-section .container {
+.wrapper .container {
     background-color: #FBDFDB;
     border-radius: 30px;
+    margin-top: 20px;
     width: 100%;
     height: 366px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
 
-section .container__info {
-    
-}
 
-section .container__img {
+.wrapper .container__info {
+    margin: auto;
+    width: 316px;
+    font-size: 18px;
+}
+.wrapper .container__info h1 {
+    font-size: 32px;
+}
+.wrapper .container__img {
     margin: auto;
     margin-bottom: 0px;
 }
+
+section h2 {
+    margin: 50px 0px 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card .card_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
