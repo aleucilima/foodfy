@@ -34,7 +34,6 @@ header .links .menu a{
     grid-template-columns: 1fr 1fr;
 }
 
-
 .wrapper .container__info {
     margin: auto;
     width: 316px;
@@ -64,3 +63,47 @@ section h2 {
     border-radius: 15px;
 }
 
+/*== MODAL ==*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal {
+    background-color: white;
+    border-radius: 16px;
+    width: 660px;
+    height: 413px;
+    margin: 20vh auto;
+    position: relative;
+    text-align: center;
+}
+
+.modal-img img {
+    margin: 30px 30px 20px;
+    border-radius: 15px;
+    width: 600px;
+    height: 200px;
+}
+
+.modal-title .title-revenue {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.modal-title .modal-autor {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 60px;
+}
+
+.modal .close-modal {
+    cursor: pointer;
+    color: #999;
+    font-size: 16px;
+}
