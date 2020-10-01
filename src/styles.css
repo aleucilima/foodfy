@@ -72,6 +72,8 @@ section h2 {
     position: fixed;
     top: 0;
     left: 0;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .modal {
@@ -106,4 +108,12 @@ section h2 {
     cursor: pointer;
     color: #999;
     font-size: 16px;
+}
+
+
+/*== MODAL.ACTIVE ==*/
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
