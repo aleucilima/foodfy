@@ -3,12 +3,11 @@ const cards = document.querySelectorAll('.card')
 
 for (let card of cards) {
     card.addEventListener('click', function(){
-        const imgId = card.getAttribute('id')
-        const autor = card.getAttribute('id')
-
+        const imgId = card.getAttribute('alt')
+        
         modalOverlay.classList.add('active')
         modalOverlay.querySelector('img').src = `./assets/${imgId}`
-        modalOverlay.querySelector('.title-revenue') = `${autor}`
+        //modalOverlay.querySelector('.title-revenue') = `${autor}`
     })
 }
 
