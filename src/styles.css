@@ -24,6 +24,10 @@ header .links .menu a{
     margin-right: 30px;
 }
 
+header .links .menu a:active {
+    text-decoration: bold;
+}
+
 .wrapper .container {
     background-color: #FBDFDB;
     border-radius: 30px;
