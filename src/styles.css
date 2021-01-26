@@ -9,6 +9,7 @@
 body {
     margin: 0 230px;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 
@@ -25,7 +26,11 @@ header .links .menu a{
 }
 
 header .links .menu a:active {
-    text-decoration: bold;
+    font-weight: bold !important;
+}
+
+header .links .menu a:focus{
+    font-weight: bold;
 }
 
 .wrapper .container {
@@ -51,7 +56,7 @@ header .links .menu a:active {
     margin-bottom: 0px;
 }
 
-section h2 {
+section .subtitle{
     margin: 50px 0px 20px;
 }
 
@@ -59,12 +64,41 @@ section h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    margin-bottom: 100px;
 }
 
 .card .card_img img{
     width: 100%;
     height: 100%;
     border-radius: 15px;
+}
+
+.card .content .revenue {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    
+}
+
+.card .content .author {
+    font-size: 14px;
+    color: #777;
+}
+
+footer {
+    background-color: #eee;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 62px;
+}
+
+footer .copyright {
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    margin-top: 23px;
 }
 
 /*== MODAL ==*/
@@ -120,4 +154,20 @@ section h2 {
 .modal-overlay.active {
     opacity: 1;
     visibility: visible;
+}
+
+/*== PAGE SOBRE ==*/
+
+
+section .title-sobre {
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+section .content-p {
+    margin: 20px 0px 30px;
+}
+
+section .second-title {
+    font-size: 20px;
 }
