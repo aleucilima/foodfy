@@ -124,7 +124,7 @@ footer .copyright {
     text-align: center;
 }
 
-.modal-img img {
+.modal-img frame {
     margin: 30px 30px 20px;
     border-radius: 15px;
     width: 600px;
