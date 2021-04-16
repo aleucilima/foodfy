@@ -18,4 +18,16 @@ app.get('/', (request, response) => {
     return response.render('index', { items: recipe })
 })
 
+app.get('/recipe/:id', (request, response) => {
+    const recipes = [ recipe ]
+    const { id } = request.params
+    
+    const recipeId = recipes.find((recipeId) => recipe.id === recipe.id)
+
+    if(!recipeId) {
+        return response.send('not found')
+    }
+    return response.render('recipe', { items: recipe })
+})
+
 app.listen(3333)

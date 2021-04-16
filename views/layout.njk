@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/assets/favicon.ico" type="image/x-icon">
     <title>Foodfy</title>
 </head>
 <body>
     <header>
         <div class="links">
             <div class="logo">
-                <a href="index.html" id="foodfy"><img src="/assets/logo.png" alt=""></a>
+                <a href="/" id="foodfy"><img src="/assets/logo.png" alt=""></a>
             </div>
             <div class="menu">
-            <a href="sobre.html" id="sobre">Sobre</a>
-            <a href="receitas.html" id="receitas">Receitas</a>
+            <a href="/sobre.html" id="sobre">Sobre</a>
+            <a href="/recipe/:id" id="receitas">Receitas</a>
             </div>
         </div>
     </header>
 
     {% block content %}{% endblock %}
+
+    <footer>
+        <div class="footer">
+            <p class="copyright">
+                Todos os direitos reservados, receitas Foodfy.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,11 +1,4 @@
 
-    <footer>
-        <div class="footer">
-            <p class="copyright">
-                Todos os direitos reservados, receitas Foodfy.
-            </p>
-        </div>
-    </footer>
 
 
     <div class="modal-overlay ">
