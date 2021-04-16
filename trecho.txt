@@ -1,0 +1,24 @@
+
+    <footer>
+        <div class="footer">
+            <p class="copyright">
+                Todos os direitos reservados, receitas Foodfy.
+            </p>
+        </div>
+    </footer>
+
+
+    <div class="modal-overlay ">
+        <div class="modal">
+            <div class="modal-img">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+            <div class="modal-title">
+                <p class="title-revenue"></p>
+                <p class="modal-autor"></p>
+            </div>
+            <div class="close-modal">
+                <a>Fechar receita</a>
+            </div>
+        </div>
+    </div>
