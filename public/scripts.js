@@ -4,7 +4,7 @@ const cards = document.querySelectorAll('.card')
 for (let card of cards) {
     card.addEventListener('click', () => {
         const recipe = card.getAttribute('id')
-        window.location.href = `/receitas/${recipe}`
+        window.location.href = `/recipe/${recipe}`
     })
     
 }

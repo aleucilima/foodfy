@@ -5,6 +5,7 @@ const app = express()
 const recipe = require('./data')
 const recipes = [ recipe ]
 
+
 app.use(express.static('public'))
 
 app.set('view engine', "njk")
@@ -22,13 +23,9 @@ app.get('/', (request, response) => {
 app.get('/recipe/:id', (request, response) => {
     const { id } = request.params
 
-    const recipe = recipes.find(recipe => recipe.id === id)
+    const recipe = recipes.find((recipe) => recipe.id === id)
     
-    if(!recipe){
-        return response.status(404).send('Not Found')
-    }
-
-    return response.render('recipe', { item: recipe })
+    return response.render('recipe', { items: recipe })
 })
 
 app.listen(3333)
