@@ -3,6 +3,7 @@ const nunjucks = require('nunjucks')
 
 const app = express()
 const recipe = require('./data')
+const recipes = [ recipe ]
 
 app.use(express.static('public'))
 
@@ -18,16 +19,16 @@ app.get('/', (request, response) => {
     return response.render('index', { items: recipe })
 })
 
-app.get('/recipe/:id', (request, response) => {
-    const recipes = [ recipe ]
+app.get('/recipe', (request, response) => {
     const { id } = request.params
-    
-    const recipeId = recipes.find((recipeId) => recipe.id === recipe.id)
 
-    if(!recipeId) {
-        return response.send('not found')
+    const recipe = recipes.find(recipe => recipe.id === id)
+    
+    if(!recipe){
+        return response.status(404).send('Not Found')
     }
-    return response.render('recipe', { items: recipe })
+
+    return response.render('recipe', { item: recipe })
 })
 
 app.listen(3333)

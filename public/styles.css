@@ -174,3 +174,11 @@ section .second-title {
 
 /* Page Recipe */
 
+.wrapper-recipe .container-recipe {
+    border-radius: 30px;
+    margin-top: 20px;
+    width: 100%;
+    height: 366px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
