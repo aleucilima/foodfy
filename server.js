@@ -19,7 +19,7 @@ app.get('/', (request, response) => {
     return response.render('index', { items: recipe })
 })
 
-app.get('/recipe', (request, response) => {
+app.get('/recipe/:id', (request, response) => {
     const { id } = request.params
 
     const recipe = recipes.find(recipe => recipe.id === id)
