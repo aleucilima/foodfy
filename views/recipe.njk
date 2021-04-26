@@ -1,6 +1,14 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-
+    <div class="card">
+        <div class="card_img">
+            <img src="{{item.image}}" alt="burger">
+        </div>
+        <div class="content">
+            <p class="revenue">{{item.title}}</p>
+            <p class="author">{{item.author}}</p>
+        </div>
+    </div>
 
 {% endblock %}

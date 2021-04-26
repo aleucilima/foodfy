@@ -25,10 +25,6 @@ app.get('/recipe/:index', (request, response) => {
 
     const recipe = recipes.find((recipe) => recipe[recipeIndex] === recipeIndex)
     
-    if(!recipes[recipeIndex]){
-        return response.send("Receita não encontrada")
-    }
-
     return response.render('recipe', { recipe: recipes[recipeIndex] })
 })
 
