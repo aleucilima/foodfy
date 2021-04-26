@@ -20,12 +20,16 @@ app.get('/', (request, response) => {
     return response.render('index', { items: recipe })
 })
 
-app.get('/recipe/:id', (request, response) => {
-    const { id } = request.params
+app.get('/recipe/:index', (request, response) => {
+    const recipeIndex = request.params.index
 
-    const recipe = recipes.find((recipe) => recipe.id === id)
+    const recipe = recipes.find((recipe) => recipe[recipeIndex] === recipeIndex)
     
-    return response.render('recipe', { items: recipe })
+    if(!recipes[recipeIndex]){
+        return response.send("Receita não encontrada")
+    }
+
+    return response.render('recipe', { recipe: recipes[recipeIndex] })
 })
 
 app.listen(3333)
