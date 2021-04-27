@@ -18,6 +18,10 @@ app.get('/', (request, response) => {
     return response.render('index', { items: recipe })
 })
 
+app.get('/sobre', (request, response) => {
+    return response.render('sobre')
+})
+
 app.get('/recipe/:index', (request, response) => {
     const recipeIndex = request.params.index - 1
 
