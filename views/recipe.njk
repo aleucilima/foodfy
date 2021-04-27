@@ -5,63 +5,29 @@
 {% endblock %}
 
 {% block content %}
-    <div class="card">
-        <div class="card_img">
-            <img src="{{items.image}}" alt="Imagem de {{items.title}}">
+    <section class="wrapper-recipe">
+        <div class="recipe">
+            <div class="recipe_img">
+                <img src="{{items.image}}" alt="Imagem de {{items.title}}">
+            </div>
+            <div class="content-recipe">
+                <p class="revenue">{{items.title}}</p>
+                <p class="author">{{items.author}}</p>
+            </div>
         </div>
-        <div class="content">
-            <p class="revenue">{{items.title}}</p>
-            <p class="author">{{items.author}}</p>
-        </div>
-    </div>
+
+    <h2 id="ingredients">Ingredientes</h2>
+
+    {% for ingredients in items.ingredients %}
+        <li>
+            {{ingredients}}
+        </li>
+    {% endfor %}
+
+    <h2 id="preparation">Modo de Preparo</h2>
+
+    <h2 id="information">Informações adicionais</h2>
+    <p id="information-recipe">{{items.information}}</p>
+
+    </section>
 {% endblock %}
-
-{# {% block content %}
-
- <section class="produtos-descricao" >
-
-    <img src="{{items.image}}" alt="Imagem de {{items.title}}"/>
-    
-    <h1>
-        {{items.title}}
-    </h1>
-
-    <p>
-        {{items.author}}
-    </p>
-
-    <div class="ingredientes">
-
-        <div class="ingredientes-titulo">
-            <h2>Ingredientes</h2> 
-            <a class="button">Esconder</a>
-        </div>
-        
-
-        <ul class="ingredientes-lista ingLista ingredients-details" >
-
-            {% for ingredientes in items.ingredients %}
-            
-            <li id="ingredients-list" >● {{ingredientes}};</li> 
-
-            {% endfor %}
-        </ul>
-
-        <div class="ingredientes-preparo ingLista">
-            <h2>Modo Preparo</h2>
-            <a  class="button" > Esconder </a>  
-        </div>
-
-        <p id="ingredients-preparation" class="ingredients-details" > {{items.preparation}}</p>
-        
-        <div class="ingredientes-informacoes-adicionais">
-            <h2>Informações adicionais</h2>
-            <a class="button"> Esconder </a> 
-        </div>   
-
-        <p id="ingredients-information" class="ingredients-details" >{{items.information}}</p>
-
-    </div>
-</section>
-
-{% endblock %} #}

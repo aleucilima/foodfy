@@ -174,11 +174,52 @@ section .second-title {
 
 /* Page Recipe */
 
-.wrapper-recipe .container-recipe {
-    border-radius: 30px;
-    margin-top: 20px;
+.recipe .recipe_img img{
     width: 100%;
-    height: 366px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.recipe .content-recipe {
+    padding-top: 50px;
+    text-align: center;
+}
+.recipe .content-recipe .revenue {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111;
+    
+}
+
+.recipe .content-recipe .author {
+    font-size: 14px;
+    color: #777;
+}
+
+.wrapper-recipe #ingredients {
+    font-size: 24px;
+    padding: 50px 0px 20px;
+}
+
+.wrapper-recipe #preparation {
+    font-size: 24px;
+    line-height: 34px;
+    padding: 39px 0px 47px;
+}
+
+.wrapper-recipe #information {
+    font-size: 24px;
+    line-height: 34px;
+    padding-bottom: 20px;
+}
+
+.wrapper-recipe {
+    padding-bottom: 150px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+#information-recipe {
+    white-space: pre-wrap;
 }
