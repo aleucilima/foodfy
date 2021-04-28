@@ -1,0 +1,1 @@
+![alt text](https://raw.githubusercontent.com/aleucilima/foodfy/master/public/assets/foodfy.jpeg)
