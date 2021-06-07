@@ -16,7 +16,7 @@
             </div>
         </div>
 
-    <h2 id="ingredients">Ingredientes</h2>
+    <h2 id="ingredients">Ingredientes</h2> <a href="/">ESCONDER</a>
 
     {% for ingredients in items.ingredients %}
         <li>
@@ -24,9 +24,9 @@
         </li>
     {% endfor %}
 
-    <h2 id="preparation">Modo de Preparo</h2>
-
-    <h2 id="information">Informações adicionais</h2>
+    <h2 id="preparation">Modo de Preparo</h2> <a href="/">ESCONDER</a>
+    <p>{{items.preparation}}</p>
+    <h2 id="information">Informações adicionais</h2> <a href="/">ESCONDER</a>
     <p id="information-recipe">{{items.information}}</p>
 
     </section>
