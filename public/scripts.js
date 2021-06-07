@@ -12,16 +12,13 @@ for (let card of cards) {
 /*  Function for button "Esconder/Mostrar" */
 const showHides = document.querySelectorAll('.topic')
 
-for(let showHide of showHides) {
-    const btnShowHide = showHide.querySelector('button')
 
-    btnShowHide.addEventListener('click', () => {
-        if(btnShowHide.innerHTML == "ESCONDER") {
-            showHide.querySelector('.topic-content').classList.add('hidden')
-            btnShowHide.innerHTML = "MOSTRAR"
-        } else {
-            showHide.querySelector('.topic-content').classList.remove('hidden')
-            btnShowHide.innerHTML = "ESCONDER"
-        }
-    })
+function btnShowHide(el){
+    const display = document.getElementById(el).style.display
+    if(display == 'none'){
+        document.getElementById(el).style.display = 'block'
+    } else {
+        document.getElementById(el).style.display = 'none'
+    }
+
 }

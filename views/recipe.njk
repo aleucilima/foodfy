@@ -19,7 +19,7 @@
     <div id="ingredients" class="topic">
         <div class="recipe-menu">
             <h3>Ingredientes</h3> 
-            <button>ESCONDER</button>
+            <button type="button" onClick="btnShowHide(topic-content)">mostrar</button>
         </div>
         
         <div id="dash-list" class="topic-content">
@@ -31,10 +31,12 @@
         </div>
 
 
-        <h3 id="preparation">Modo de Preparo</h3> <a href="/">ESCONDER</a>
+        <h3 id="preparation">Modo de Preparo</h3> <button>ESCONDER</button>
         <p>{{items.preparation}}</p>
-        <h3 id="information">Informações adicionais</h3> <a href="/">ESCONDER</a>
+        <h3 id="information">Informações adicionais</h3> <button>ESCONDER</button>
         <p id="information-recipe">{{items.information}}</p>
     </div>
+
+    <script src="/scripts.js"></script>
     </section>
 {% endblock %}

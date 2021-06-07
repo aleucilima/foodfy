@@ -196,7 +196,7 @@ section .second-title {
     color: #777;
 }
 
-.wrapper-recipe #ingredients {
+.wrapper-recipe .topic .recipe-menu {
     font-size: 24px;
     padding: 50px 0px 20px;
 }
