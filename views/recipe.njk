@@ -16,18 +16,25 @@
             </div>
         </div>
 
-    <h2 id="ingredients">Ingredientes</h2> <a href="/">ESCONDER</a>
+    <div id="ingredients" class="topic">
+        <div class="recipe-menu">
+            <h3>Ingredientes</h3> 
+            <button>ESCONDER</button>
+        </div>
+        
+        <div id="dash-list" class="topic-content">
+            {% for ingredients in items.ingredients %}
+                <li>
+                    {{ingredients}}
+                </li>
+            {% endfor %}
+        </div>
 
-    {% for ingredients in items.ingredients %}
-        <li>
-            {{ingredients}}
-        </li>
-    {% endfor %}
 
-    <h2 id="preparation">Modo de Preparo</h2> <a href="/">ESCONDER</a>
-    <p>{{items.preparation}}</p>
-    <h2 id="information">Informações adicionais</h2> <a href="/">ESCONDER</a>
-    <p id="information-recipe">{{items.information}}</p>
-
+        <h3 id="preparation">Modo de Preparo</h3> <a href="/">ESCONDER</a>
+        <p>{{items.preparation}}</p>
+        <h3 id="information">Informações adicionais</h3> <a href="/">ESCONDER</a>
+        <p id="information-recipe">{{items.information}}</p>
+    </div>
     </section>
 {% endblock %}
