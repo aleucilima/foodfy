@@ -11,14 +11,3 @@ for (let card of cards) {
 
 /*  Function for button "Esconder/Mostrar" */
 const showHides = document.querySelectorAll('.topic')
-
-
-function btnShowHide(el){
-    const display = document.getElementById(el).style.display
-    if(display == 'none'){
-        document.getElementById(el).style.display = 'block'
-    } else {
-        document.getElementById(el).style.display = 'none'
-    }
-
-}
