@@ -16,13 +16,13 @@
             </div>
         </div>
 
-    <div id="ingredients" class="topic">
-        <div class="recipe-menu">
+    <div id="recipe-content">
+        <div id="ingredients" class="topic">
             <h3>Ingredientes</h3> 
-            <button type="button" onClick="btnShowHide(topic-content)">mostrar</button>
+            <h4>ESCONDER</h4>
         </div>
         
-        <div id="dash-list" class="topic-content">
+        <div class="topic-content">
             {% for ingredients in items.ingredients %}
                 <li>
                     {{ingredients}}
@@ -31,10 +31,15 @@
         </div>
 
 
-        <h3 id="preparation">Modo de Preparo</h3> <button>ESCONDER</button>
-        <p>{{items.preparation}}</p>
-        <h3 id="information">Informações adicionais</h3> <button>ESCONDER</button>
-        <p id="information-recipe">{{items.information}}</p>
+        <h3 id="preparation" class="topic">Modo de Preparo</h3><h4>ESCONDER</h4>
+        <div class="topic-content">
+            <p>{{items.preparation}}</p>
+        </div>
+        
+        <h3 id="information" class="topic">Informações adicionais</h3><h4>ESCONDER</h4>
+        <div class="topic-content">
+            <p id="information-recipe">{{items.information}}</p>
+        </div>
     </div>
 
     <script src="/scripts.js"></script>
