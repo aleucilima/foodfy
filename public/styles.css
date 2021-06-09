@@ -143,8 +143,13 @@ section .second-title {
 
 .wrapper-recipe .topic {
     display: flex;
+    align-items: baseline;
     width: 50vw;
     padding: 50px 0px 20px;
+}
+
+.wrapper-recipe h3 {
+    font-size: 24px;
 }
 
 .wrapper-recipe h4 {
@@ -155,22 +160,16 @@ section .second-title {
     font-weight: normal;
 }
 
-.wrapper-recipe #preparation {
-    font-size: 24px;
-    line-height: 34px;
-    padding: 39px 0px 47px;
-}
-
-.wrapper-recipe #information {
-    font-size: 24px;
-    line-height: 34px;
-    padding-bottom: 20px;
-}
-
-.wrapper-recipe {
-    padding-bottom: 150px;
+.wrapper-recipe .topic-content {
     font-size: 18px;
     line-height: 28px;
+}
+
+.wrapper-recipe #preparation ul {
+    list-style-type: none;
+}
+.wrapper-recipe {
+    padding-bottom: 150px;
     text-align: justify;
 }
 

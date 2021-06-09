@@ -17,12 +17,12 @@
         </div>
 
         <div id="recipe-content">
-            <div id="ingredients" class="topic">
+            <div class="topic">
                 <h3>Ingredientes</h3> 
                 <h4>ESCONDER</h4>
             </div>
             
-            <div class="topic-content">
+            <div id="ingredients" class="topic-content">
                 {% for ingredients in items.ingredients %}
                     <li>
                         {{ingredients}}
@@ -30,12 +30,18 @@
                 {% endfor %}
             </div>
 
-            <div id="preparation" class="topic">
+            <div class="topic">
                 <h3>Modo de Preparo</h3>
                 <h4>ESCONDER</h4>
             </div>
-            <div class="topic-content">
-                <p>{{items.preparation}}</p>
+            <div id="preparation" class="topic-content">
+                <ul>
+                {% for preparation in items.preparation %}
+                    <li>
+                        {{preparation}}
+                    </li>
+                 {% endfor %}
+                </ul>
             </div>
             
             <div id="information" class="topic">
