@@ -101,63 +101,8 @@ footer .copyright {
     margin-top: 23px;
 }
 
-/*== MODAL ==*/
 
-.modal-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.modal {
-    background-color: white;
-    border-radius: 16px;
-    width: 660px;
-    height: 413px;
-    margin: 20vh auto;
-    position: relative;
-    text-align: center;
-}
-
-.modal-img frame {
-    margin: 30px 30px 20px;
-    border-radius: 15px;
-    width: 600px;
-    height: 200px;
-}
-
-.modal-title .title-revenue {
-    font-size: 24px;
-    margin-bottom: 5px;
-}
-
-.modal-title .modal-autor {
-    font-size: 18px;
-    color: #777;
-    margin-bottom: 60px;
-}
-
-.modal .close-modal {
-    cursor: pointer;
-    color: #999;
-    font-size: 16px;
-}
-
-
-/*== MODAL.ACTIVE ==*/
-
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-/*== PAGE SOBRE ==*/
-
+/*== PAGE ABOUT ==*/
 
 section .title-sobre {
     margin-top: 50px;
@@ -172,33 +117,42 @@ section .second-title {
     font-size: 20px;
 }
 
-/* Page Recipe */
+/* PAGE RECIPE */
 
 .recipe .recipe_img img{
     width: 100%;
     height: 100%;
-    border-radius: 15px;
+    border-radius: 16px;
 }
 
 .recipe .content-recipe {
-    padding-top: 50px;
+    padding-top: 64px;
     text-align: center;
 }
 .recipe .content-recipe .revenue {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     color: #111;
-    
 }
 
 .recipe .content-recipe .author {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: normal;
     color: #777;
 }
 
-.wrapper-recipe .topic .recipe-menu {
-    font-size: 24px;
+.wrapper-recipe .topic {
+    display: flex;
+    width: 50vw;
     padding: 50px 0px 20px;
+}
+
+.wrapper-recipe h4 {
+    margin-left: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #999;
+    font-weight: normal;
 }
 
 .wrapper-recipe #preparation {

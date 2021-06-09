@@ -11,37 +11,42 @@
                 <img src="{{items.image}}" alt="Imagem de {{items.title}}">
             </div>
             <div class="content-recipe">
-                <p class="revenue">{{items.title}}</p>
-                <p class="author">{{items.author}}</p>
+                <h1 class="revenue">{{items.title}}</h1>
+                <h2 class="author">{{items.author}}</h2>
             </div>
         </div>
 
-    <div id="recipe-content">
-        <div id="ingredients" class="topic">
-            <h3>Ingredientes</h3> 
-            <h4>ESCONDER</h4>
-        </div>
-        
-        <div class="topic-content">
-            {% for ingredients in items.ingredients %}
-                <li>
-                    {{ingredients}}
-                </li>
-            {% endfor %}
+        <div id="recipe-content">
+            <div id="ingredients" class="topic">
+                <h3>Ingredientes</h3> 
+                <h4>ESCONDER</h4>
+            </div>
+            
+            <div class="topic-content">
+                {% for ingredients in items.ingredients %}
+                    <li>
+                        {{ingredients}}
+                    </li>
+                {% endfor %}
+            </div>
+
+            <div id="preparation" class="topic">
+                <h3>Modo de Preparo</h3>
+                <h4>ESCONDER</h4>
+            </div>
+            <div class="topic-content">
+                <p>{{items.preparation}}</p>
+            </div>
+            
+            <div id="information" class="topic">
+                <h3>Informações adicionais</h3>
+                <h4>ESCONDER</h4>
+            </div>
+            <div class="topic-content">
+                <p id="information-recipe">{{items.information}}</p>
+            </div>
         </div>
 
-
-        <h3 id="preparation" class="topic">Modo de Preparo</h3><h4>ESCONDER</h4>
-        <div class="topic-content">
-            <p>{{items.preparation}}</p>
-        </div>
-        
-        <h3 id="information" class="topic">Informações adicionais</h3><h4>ESCONDER</h4>
-        <div class="topic-content">
-            <p id="information-recipe">{{items.information}}</p>
-        </div>
-    </div>
-
-    <script src="/scripts.js"></script>
+        <script src="/scripts.js"></script>
     </section>
 {% endblock %}
