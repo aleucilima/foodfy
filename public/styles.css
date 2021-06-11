@@ -176,3 +176,14 @@ section .second-title {
 #information-recipe {
     white-space: pre-wrap;
 }
+
+/* FORM */
+
+input {
+    width: 100%;
+    outline: none;
+    color: #ddd;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid #555;
+}
