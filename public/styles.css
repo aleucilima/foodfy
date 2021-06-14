@@ -6,6 +6,10 @@
     border: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 header .links{
     display: flex;
     align-items: baseline;
@@ -30,7 +34,6 @@ header .links .menu a:focus{
 
 .wrapper-section {
     margin: 0 230px;
-    font-family: 'Roboto', sans-serif;
     position: static;
 }
 
@@ -182,9 +185,11 @@ section .second-title {
 
 input {
     width: 100%;
+    box-sizing: border-box;
     height: 49px;
     font-weight: normal;
     font-size: 18px;
+    padding-left: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
 }
@@ -214,9 +219,26 @@ input {
 
 .item .informations {
     height: 257px;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 10px 10px;
+    border: 1px solid #ddd;
 }
 
 .title-page {
     display: flex;
-    align-items: stretch;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-submit {
+    background-color: #6558C3;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    width: 139px;
+    height: 37px;
+    cursor: pointer;    
 }
