@@ -3,7 +3,8 @@
     <div>
         <input 
             type="url" 
-            name="image_url" 
+            name="image_url"
+            value="{{ recipe.image_url }}"
         >
     </div>
 </div>
@@ -12,7 +13,7 @@
     <div class="title-item">Ingredientes</div>
     <div id="ingredients">
         <div class="ingredient">
-            <input type="text" name="ingredients[]" value=""/>
+            <input type="text" name="ingredients[]" value="{{ recipe.ingredient }}"/>
         </div>
     </div>
         <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
@@ -22,7 +23,7 @@
     <div class="title-item">Modo de preparo</div>
     <div id="prepare">
         <div class="prepare">
-            <input type="text" name="steps[]" value=""/>
+            <input type="text" name="steps[]" value="{{ recipe.prepare }}"/>
         </div>
     </div>
         <button type="button" class="add-new-step">Adicionar novo passo</button>
@@ -35,6 +36,7 @@
             class="informations"
             cols="35"
             rows="8"
+            value="{{ recipe.aditional }}"
         ></textarea>
     </div>
 </div>

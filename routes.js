@@ -4,6 +4,7 @@ const recipes = require('./admin/recipes')
 
 const routes = express.Router()
 
+
 routes.get('/', (request, response) => {
     return response.render('index', { items: recipe })
 })
@@ -18,7 +19,8 @@ routes.get('/recipe/:index', (request, response) => {
     return response.render('recipe', {items: recipe[recipeIndex]})
 })
 
-
-routes.get('/admin/recipes/create', recipes.index)
+routes.get('/admin/recipes', recipes.index)
+routes.get('/admin/recipes/create', recipes.create)
+routes.post('/admin/recipes', recipes.post)
 
 module.exports = routes

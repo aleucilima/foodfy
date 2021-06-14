@@ -1,12 +1,13 @@
 {% extends "layoutAdmin.njk" %}
 
 {% block content %}
-    <form method="POST" action="/">
+    <form method="POST" action="/admin/recipes">
         <section>
             <div class="title-page">
                 <h1 class="create-title">Criando Receita</h1>
                 <button type="submit" class="btn-submit">Salvar receita</button>
             </div>
+
             {% include "recipes/fields.njk" %}
             
         </section>
