@@ -1,9 +1,9 @@
-{% extends "layout.njk" %}
+{% extends "layoutAdmin.njk" %}
 
 {% block content %}
     <form method="POST" action="/recipes">
         <section>
-            <h1>Criando Receita</h1>
+            <h1 class="create-title">Criando Receita</h1>
 
             {% include "recipes/fields.njk" %}
             
