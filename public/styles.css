@@ -34,7 +34,7 @@ header .links .menu a:focus{
 
 .wrapper-section {
     margin: 0 230px;
-    position: static;
+
 }
 
 .wrapper .container {
@@ -60,7 +60,7 @@ header .links .menu a:focus{
     margin-bottom: 0px;
 }
 
-section .subtitle{
+section .subtitle {
     margin: 50px 0px 20px;
 }
 
@@ -225,12 +225,13 @@ input {
     font-size: 18px;
     padding: 10px 10px;
     border: 1px solid #ddd;
+    font-family: 'Roboto', sans-serif;
 }
 
 .title-page {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
 
 .btn-submit {
