@@ -214,6 +214,10 @@ input {
 .add-ingredient, .add-new-step {
     color: #6558C3;
     cursor: pointer;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
 
 }
 
@@ -239,6 +243,7 @@ input {
     border-radius: 4px;
     color: white;
     font-size: 16px;
+    font-weight: bold;
     width: 139px;
     height: 37px;
     cursor: pointer;    
