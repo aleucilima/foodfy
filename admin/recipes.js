@@ -10,28 +10,30 @@ exports.create = (request, response) => {
 }
 
 exports.post = (request, response) => {
-    const recipeCreate = request.body
-    let index = 0
+   const keys = Object.keys(request.body)
 
-    const foundRecipe = data.recipes.find((recipe, foundIndex) =>{
-        if(recipe[foundIndex] == recipeCreate[foundIndex]) {
-            index = foundIndex
-            return true
-        }
-    })
+   for(key of keys) {
+       if (request.body[key] == '')
+        return response.send('Please, fill all fields')
+   }
 
-    if (foundRecipe) return response.send("Recipe already exists")
-    
-    const recipe = { 
-        ...request.body
-    }
+   let id = 1
+   const lastRecipe = data.recipes[data.recipes.length - 1]
 
-    data.recipes[index] = recipe
+   if(lastRecipe) {
+       id = lastRecipe.id + 1
+   }
 
-    
-    fs.writeFile('data.json', JSON.stringify(data, null, 2), (err) => {
-        if(err) return response.send('Write file error!')
+   data.recipes.push({
+       id,
+       ...request.body
+   })
 
-        return response.redirect('/admin/recipes')
-    })
+   fs.writeFile('data.json', JSON.stringify(data, null, 2), (err) => {
+       if (err) return response.send('Write file error!')
+
+       return response.redirect('/admin/recipes')
+   })
+
 }
+
