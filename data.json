@@ -1,5 +1,16 @@
 {
   "recipes": [
-    {}
+    {
+      "image_url": "https://google.com",
+      "ingredients": [
+        "Frango",
+        ""
+      ],
+      "preparation": [
+        "Mistura tudo",
+        ""
+      ],
+      "description": "asfdfas"
+    }
   ]
 }

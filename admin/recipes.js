@@ -20,17 +20,18 @@ exports.post = (request, response) => {
         }
     })
 
-    if(foundRecipe) return response.send("Recipe already exists")
+    if (foundRecipe) return response.send("Recipe already exists")
     
     const recipe = { 
         ...request.body
     }
 
     data.recipes[index] = recipe
-  
+
+    
     fs.writeFile('data.json', JSON.stringify(data, null, 2), (err) => {
         if(err) return response.send('Write file error!')
 
-        return response.redirect('admin/recipes')
+        return response.redirect('/admin/recipes')
     })
 }

@@ -4,7 +4,6 @@ const recipes = require('./admin/recipes')
 
 const routes = express.Router()
 
-
 routes.get('/', (request, response) => {
     return response.render('index', { items: recipe })
 })

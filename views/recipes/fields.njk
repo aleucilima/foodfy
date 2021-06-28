@@ -23,7 +23,7 @@
     <div class="title-item">Modo de preparo</div>
     <div id="prepare">
         <div class="prepare">
-            <input type="text" name="steps[]" value="{{ recipe.prepare }}"/>
+            <input type="text" name="preparation[]" value="{{ recipe.preparation }}"/>
         </div>
     </div>
         <button type="button" class="add-new-step">Adicionar novo passo</button>
@@ -33,10 +33,11 @@
     <div class="title-item">Informações adicionais</div>
     <div>
         <textarea 
+            name="description"
+            value="{{ recipe.description }}"
             class="informations"
             cols="35"
             rows="8"
-            value="{{ recipe.aditional }}"
         ></textarea>
     </div>
 </div>
