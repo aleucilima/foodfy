@@ -2,7 +2,7 @@ const fs = require('fs')
 const data = require('../data.json')
 
 exports.index = (request, response) => {
-    return response.render('recipes/index')
+    return response.render('recipes/index', { recipes:data.recipes})
 }
 
 exports.create = (request, response) => {

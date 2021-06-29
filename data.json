@@ -2,7 +2,7 @@
   "recipes": [
     {
       "id": 1,
-      "image_url": "https://google.com",
+      "image_url": "https://raw.githubusercontent.com/aleucilima/foodfy/master/public/assets/burger.png",
       "ingredients": [
         "Arroz",
         ""
@@ -15,7 +15,7 @@
     },
     {
       "id": 2,
-      "image_url": "https://google.com",
+      "image_url": "https://raw.githubusercontent.com/aleucilima/foodfy/master/public/assets/burger.png",
       "ingredients": [
         "Arroz",
         "Feijao",
@@ -27,6 +27,41 @@
         ""
       ],
       "description": "Mistura tudo"
+    },
+    {
+      "id": 3,
+      "image_url": "https://raw.githubusercontent.com/aleucilima/foodfy/master/public/assets/burger.png",
+      "ingredients": [
+        "Arroz",
+        "Feijao",
+        ""
+      ],
+      "preparation": [
+        "Esquenta tudo",
+        "Mistura tudo",
+        ""
+      ],
+      "description": "Mistura tudo"
+    },
+    {
+      "id": 4,
+      "image_url": "https://raw.githubusercontent.com/aleucilima/foodfy/master/public/assets/burger.png",
+      "ingredients": [
+        "Pao",
+        "Batata",
+        "queijo",
+        "Hamburguer",
+        "Picles",
+        "Pimenta",
+        "Bacon",
+        ""
+      ],
+      "preparation": [
+        "Corta tudo",
+        "Mistura tudo",
+        ""
+      ],
+      "description": "Taca pimenta e ketchup"
     }
   ]
 }

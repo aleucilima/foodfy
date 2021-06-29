@@ -4,6 +4,7 @@
     <div class="manager-recipes">
       <h1>Gerenciar receitas</h1>
       <div class="grid-recipes">
+      {% for recipe in recipes %}
         <div class="card-recipe">
             <img src={{ recipe.image_url }} alt={{ recipe.title }} class="img-recipe" />
             <div class="content-recipe">
@@ -12,6 +13,7 @@
               <a>Visualizar</a>
             </div>
         </div>
+      {% endfor %}
       </div>
     </div>
 {% endblock content %}
