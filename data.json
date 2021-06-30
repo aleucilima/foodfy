@@ -12,6 +12,22 @@
         ""
       ],
       "description": "Mistura tudo"
+    },
+    {
+      "id": 2,
+      "image_url": "https://raw.githubusercontent.com/aleucilima/foodfy/master/public/assets/burger.png",
+      "ingredients": [
+        "Pão",
+        "Queijo",
+        "Mortadela",
+        ""
+      ],
+      "preparation": [
+        "Corta tudo",
+        "Mistura tudo",
+        ""
+      ],
+      "description": "Fica bom com ketchup"
     }
   ]
 }
