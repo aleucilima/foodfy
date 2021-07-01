@@ -1,34 +1,39 @@
 {% extends "layoutAdmin.njk" %}
 
 {% block content  %}
-  <section class="wrapper-recipe">
-        <div class="recipe">
-            <div class="recipe_img">
+  <main>
+        <div>
+          <div class="menu-recipe">
+            <h1>Receita: Triplo Bacon Burguer</h1>
+            <button type="submit">Editar receita</button>
+          </div>
+            <div class="menu-image_recipe">
                 <img src="{{ recipe.image_url }}" alt="Imagem de">
             </div>
-            <div class="content-recipe">
-                <h1 class="revenue">{{ recipe.title }}</h1>
-                <h2 class="author">{{ recipe.author }}</h2>
+            <div class="menu-info_recipe">
+                <h1>Triplo Burger Bacon</h1>
+                <h2>por Jorge</h2>
             </div>
         </div>
 
-        <div id="recipe-content">
+        <div class="content_recipe">
             <div class="topic">
                 <h3>Ingredientes</h3> 
             </div>
-            
-            <div id="ingredients" class="topic-content">
+            <div class="topic-content">
+                <ul>
                 {% for ingredients in recipe.ingredients %}
                     <li>
-                        {{ingredients}}
+                        {{ ingredients }}
                     </li>
                 {% endfor %}
+                </ul>
             </div>
 
             <div class="topic">
                 <h3>Modo de Preparo</h3>
             </div>
-            <div id="preparation" class="topic-content">
+            <div class="topic-content">
                 <ul>
                 {% for preparation in recipe.preparation %}
                     <li>
@@ -38,12 +43,12 @@
                 </ul>
             </div>
             
-            <div id="information" class="topic">
+            <div class="topic">
                 <h3>Informações adicionais</h3>
             </div>
             <div class="topic-content">
-                <p id="information-recipe">{{recipe.information}}</p>
+                <p>{{recipe.information}}</p>
             </div>
         </div>
-    </section>
+    </main>
 {% endblock %}
