@@ -50,3 +50,18 @@ exports.show = (request, response) => {
 
     return response.render('recipes/show', { recipe })
 }
+
+exports.edit = (request, response) => {
+    const { id } = request.params
+
+    const foundRecipe = data.recipes.find((recipe) => recipe.id == id)
+
+    if (!foundRecipe) return response.send('Recipe not exist')
+
+    
+    const recipe = {
+        ...foundRecipe,
+    }
+
+    return response.render('recipes/edit', { recipe })
+}
