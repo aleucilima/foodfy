@@ -81,6 +81,7 @@ section .subtitle {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     margin-bottom: 100px;
+    cursor: pointer;
 }
 
 .card .card_img img{
@@ -103,9 +104,6 @@ section .subtitle {
 
 footer {
     background-color: #eee;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     height: 62px;
 }
@@ -343,5 +341,6 @@ input {
     line-height: 24px;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
 }
 
