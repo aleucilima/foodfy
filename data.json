@@ -5,11 +5,11 @@
       "image_url": "https://raw.githubusercontent.com/aleucilima/foodfy/master/public/assets/burger.png",
       "ingredients": [
         "Arroz",
-        ""
+        "Feijao"
       ],
       "preparation": [
         "Esquenta tudo",
-        ""
+        "Mistura"
       ],
       "description": "Mistura tudo"
     },
