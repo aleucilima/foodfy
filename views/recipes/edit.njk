@@ -1,0 +1,29 @@
+{% extends "layoutAdmin.njk" %}
+
+{% block content %}
+   <div>
+          <div class="menu-recipe">
+            <h1>Receita: Triplo Bacon Burguer</h1>
+            <button type="submit">Editar receita</button>
+          </div>
+            <div class="menu-image_recipe">
+                <img src="{{ recipe.image_url }}" alt="Imagem de">
+            </div>
+            <div class="menu-info_recipe">
+                <h1>Triplo Burger Bacon</h1>
+                <h2>por Jorge</h2>
+            </div>
+  </div>
+
+  <form method="POST" action="/admin/recipes">
+      <section>
+          <div class="title-page">
+              <h1 class="create-title">Criando Receita</h1>
+              <button type="submit" class="btn-submit">Salvar receita</button>
+          </div>
+
+          {% include "recipes/fields.njk" %}
+          
+      </section>
+  </form>
+{% endblock %}
