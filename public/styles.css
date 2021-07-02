@@ -10,36 +10,49 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header .links {
-    display: flex;
-    align-items: baseline;
-    padding: 50px 0px 20px;
-    margin-left: 230px;
+header.container {
+  background: #111;
 }
 
-header .links .menu a{
-    text-decoration: none;
-    color: #111;
-    margin-right: 30px;
+.menu-section {
+  display: flex;
+  align-items: center;
+
+  width: 80%;
+  max-width: 100%;
+  margin: auto;
 }
 
-header .links .menu a:active {
-    font-weight: bold !important;
+header nav ul {
+  display: flex;
+  margin: 40px 92px;
 }
 
-header .links .menu a:focus{
-    font-weight: bold;
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000000DE;
+  margin-left: 30px;
+}
+
+header nav ul li a:hover {
+  color: #DF1CC5;
+  transition: 0.3s ease-in-out;
 }
 
 .wrapper-section {
     width: 80%;
     margin: auto;
+    padding-top: 55px;
 }
 
 .wrapper .container {
     background-color: #FBDFDB;
     border-radius: 30px;
-    margin-top: 20px;
     width: 100%;
     height: 366px;
     display: grid;

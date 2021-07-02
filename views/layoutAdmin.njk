@@ -8,13 +8,33 @@
     <title>Foodfy</title>
 </head>
 <body>
-    <header>
-        <div class="links navbar-black">
-            <div class="logo">
-                <a href="/admin/recipes" id="foodfy"><img src="/assets/logo.png" alt=""></a>
+    <header class="container">
+            <div class="menu-section">
+                <div >
+                    <div class="logo">
+                        <a href="/"><img src="/assets/logo-white.png" alt=""></a>
+                    </div>
+                    <div class="menu-toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                </div>
+               
+                <nav>
+                    <ul>
+                        <li>
+                            {#  <a href="/sobre" id="sobre">Sobre</a> #}
+                        </li>
+                        <li>
+                            {# <a href="/" id="receitas">Receitas</a> #}
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
+
     <section class="wrapper-section">
         {% block content %}{% endblock %}
     </section>
