@@ -12,9 +12,11 @@
 <div class="item">
     <div class="title-item">Ingredientes</div>
     <div id="ingredients">
+        {% for ingredient in recipe.ingredients %}
         <div class="ingredient">
-            <input type="text" name="ingredients[]" value="{{ recipe.ingredient }}"/>
+            <input type="text" name="ingredients[]" value="{{ ingredient }}"/>
         </div>
+        {% endfor %}
     </div>
         <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
 </div>
@@ -22,8 +24,9 @@
 <div class="item">
     <div class="title-item">Modo de preparo</div>
     <div id="prepare">
+        {% for prepare in recipe.preparation %}
         <div class="prepare">
-            <input type="text" name="preparation[]" value="{{ recipe.preparation }}"/>
+            <input type="text" name="preparation[]" value="{{ prepare }}"/>
         </div>
     </div>
         <button type="button" class="add-new-step">Adicionar novo passo</button>

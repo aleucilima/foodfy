@@ -43,7 +43,7 @@ exports.show = (request, response) => {
     const foundRecipe = data.recipes.find((recipe) => recipe.id == id)
 
     if (!foundRecipe) return response.send('Recipe not exist')
-
+    
     const recipe = {
         ...foundRecipe,
     }
