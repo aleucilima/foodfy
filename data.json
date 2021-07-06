@@ -1,25 +1,29 @@
 {
   "recipes": [
     {
-      "id": 1,
+      "id": "1",
       "image_url": "https://raw.githubusercontent.com/aleucilima/foodfy/master/public/assets/burger.png",
       "ingredients": [
         "Arroz",
-        "Feijao"
+        "Feijao",
+        "Carne",
+        ""
       ],
       "preparation": [
         "Esquenta tudo",
-        "Mistura"
+        "Mistura",
+        ""
       ],
-      "description": "Mistura tudo"
+      "description": ""
     },
     {
-      "id": 2,
+      "id": "2",
       "image_url": "https://raw.githubusercontent.com/aleucilima/foodfy/master/public/assets/burger.png",
       "ingredients": [
         "Pão",
         "Queijo",
         "Mortadela",
+        "Alface",
         ""
       ],
       "preparation": [
@@ -27,7 +31,7 @@
         "Mistura tudo",
         ""
       ],
-      "description": "Fica bom com ketchup"
+      "description": ""
     }
   ]
 }

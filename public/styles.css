@@ -139,7 +139,11 @@ section .second-title {
     margin-bottom: 24px;
 }
 
-.menu-recipe > button {
+.menu-recipe > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background: #6558C3;
     width: 136px;
     height: 37px;
@@ -149,10 +153,11 @@ section .second-title {
     line-height: 26px;
     font-weight: bold;
     color: #fff;
+    text-decoration: none;
     cursor: pointer;
 }
 
-.menu-recipe > button:hover {
+.menu-recipe > a:hover {
     filter: brightness(0.9);
     transition: all 0.3s;
 }

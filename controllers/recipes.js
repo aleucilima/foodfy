@@ -32,7 +32,7 @@ exports.post = (request, response) => {
    fs.writeFile('data.json', JSON.stringify(data, null, 2), (err) => {
        if (err) return response.send('Write file error!')
 
-       return response.redirect('/admin/recipes')
+       return response.redirect('recipes')
    })
 
 }
@@ -64,4 +64,31 @@ exports.edit = (request, response) => {
     }
 
     return response.render('recipes/edit', { recipe })
+}
+
+exports.update = (request, response) => {
+    const { id } = request.body
+    let index = 0
+
+    const foundRecipe = data.recipes.find((recipe, foundIndex) => {
+        if(recipe.id == id) {
+            index = foundIndex
+            return true
+        }
+    })
+
+    if (!foundRecipe) return response.send('Recipe not exist')
+
+    const recipe = {
+        ...foundRecipe,
+        ...request.body
+    }
+
+    data.recipes[index] = recipe
+
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), (err) => {
+        if (err) return response.send('Write file error!')
+ 
+        return response.redirect(`/admin/recipes/${id}`)
+    })
 }
