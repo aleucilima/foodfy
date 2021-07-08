@@ -9,8 +9,8 @@
               <button type="submit" class="btn-submit" >Salvar receita</button>
           </div>
 
-          {% include "recipes/fields.njk" %}
           <input type="hidden" name="id" value={{ recipe.id }}>
+          {% include "recipes/fields.njk" %}
       </section>
   </form>
 {% endblock %}

@@ -29,32 +29,33 @@ for(let i = 0; i < showHides.length; i++) {
 /* Function for button "addIgredient" */
 function addIngredient() {
     const ingredients = document.querySelector("#ingredients");
-    const fieldContainer = document.querySelectorAll(".ingredient");
+    const ingredient = document.querySelectorAll("#ingredients input");
   
-    const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true);
+    const newIngredient = ingredient[ingredient.length - 1].cloneNode(true);
   
-    if (newField.children[0].value == "") return false;
+    if (newIngredient.value == "") return false;
   
-    newField.children[0].value = "";
-    ingredients.appendChild(newField);
+    newIngredient.value = "";
+    ingredients.appendChild(newIngredient);
 }
-  
-    document.querySelector(".add-ingredient")
-    document.addEventListener("click", addIngredient);
+
+if (document.querySelector(".add-ingredient")) {
+    document.addEventListener("click", addIngredient)
+} 
   
 /* Function for button "addStep" */
-
-function addStep() {
-    const ingredients = document.querySelector("#prepare");
-    const fieldContainer = document.querySelectorAll(".prepare");
-    
-    const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true);
-    
-    if (newField.children[0].value == "") return false;
-    
-    newField.children[0].value = "";
-    ingredients.appendChild(newField);
+function addPreparation() {
+    const preparations = document.querySelector("#prepare");
+    const preparation = document.querySelectorAll("#prepare input");
+  
+    const newPreparation = preparation[preparation.length - 1].cloneNode(true);
+  
+    if (newPreparation.value == "") return false;
+  
+    newPreparation.value = "";
+    preparations.appendChild(newPreparation);
 }
-    
-    document.querySelector(".add-new-step")
-    document.addEventListener("click", addStep);
+
+if (document.querySelector(".add-new-step")) {
+    document.addEventListener("click", addPreparation)
+}
